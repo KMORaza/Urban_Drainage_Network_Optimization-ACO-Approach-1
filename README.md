@@ -18,7 +18,7 @@ The codebase designs a drainage network by optimizing pipe diameters and selecti
 * Regulatory and Environmental Compliance :—
   * `RegulatoryStandards` defines constraints like maximum velocity, minimum slope, and minimum cover.
   * `WaterQualityRequirements` specifies limits for pollutants (TSS, oil/grease) and pH, with a sedimentation requirement.
-  * The `calculateWaterQualityScore` method in DrainageSolution assigns scores based on HDPE pipe usage and detention facilities, though its simplistic approach (e.g., fixed increments) could be refined.
+  * The `calculateWaterQualityScore` method in `DrainageSolution` assigns scores based on HDPE pipe usage and detention facilities, though its simplistic approach (e.g., fixed increments) could be refined.
 * Optimization using ant colony optimization (ACO) :—
   * Uses ants to construct solutions by selecting paths from catchment nodes to the outfall.
   * Pheromones guide path selection, updated based on solution quality (inversely proportional to cost).
